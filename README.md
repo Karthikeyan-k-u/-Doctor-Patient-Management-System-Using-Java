@@ -33,35 +33,60 @@ This project is a simple Java console‑based application that manages doctor an
 
 
 ## 🖥️ How It Works
+
 1. The program displays a menu with four options:
+
+
    - `1. Add Doctor`
+     
    - `2. Add Patient`
+     
    - `3. Show All`
+     
    - `4. Exit`
+     
 2. The user selects an option.
+   
 3. **Adding a person:**
+   
    - Prompts for ID, Name, and Specialization/Disease.
+     
    - Creates a `Doctor` or `Patient` object and stores it in a fixed‑size `Person[]` array.
+     
 4. **Showing all records:**
+   
    - Iterates through the array and calls `role()`, `performDuty()`, and `getInfo()` for each object.
+     
    - Polymorphism ensures the correct subclass methods are executed.
+     
 5. The loop continues until the user selects **Exit**.
 
 ---
 
 ## 💻 Sample Input
+
 1.Add Doctor
+
 2.Add Patient
+
 3.Show All
+
 4.Exit
+
 Choice: 1
+
 ID: 101
+
 Name: Dr. Adams
+
 Specialization: Cardiology
 
 Choice: 2
+
 ID: 201
+
 Name: John Doe
+
 Disease: Fever
 
 Choice: 3
@@ -70,12 +95,19 @@ Choice: 3
 
 
 ## 📤 Sample Output
+
+
 Dr. Adams is a Doctor
+
 Dr. Adams is treating patients in Cardiology
+
 101: Dr. Adams
 
+
 John Doe is a Patient
+
 John Doe is receiving treatment for Fever
+
 201: John Doe
 
 ---
